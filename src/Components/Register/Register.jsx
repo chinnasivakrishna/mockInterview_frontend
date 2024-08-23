@@ -70,7 +70,7 @@ const Register = () => {
       setIsSubmitted(true);
       try {
         if(type=='mentor'){
-        const response = await axios.post("http://localhost:8080/api/mentor/add", {
+        const response = await axios.post("https://mockinterview-backend.onrender.com/api/mentor/add", {
           Name: username,
           Email: email,
           Password: password,
@@ -83,7 +83,7 @@ const Register = () => {
           }
         }
         else {
-          const response = await axios.post("http://localhost:8080/api/student/add", {
+          const response = await axios.post("https://mockinterview-backend.onrender.com/api/student/add", {
           Name: username,
           Email: email,
           Password: password,

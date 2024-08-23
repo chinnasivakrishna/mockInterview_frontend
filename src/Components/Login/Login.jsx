@@ -53,13 +53,13 @@ const Login = () => {
         let response;
         if (type === "mentor") {
           console.log(type);
-          response = await axios.post("http://localhost:8080/api/mentor/login", {
+          response = await axios.post("https://mockinterview-backend.onrender.com/api/mentor/login", {
             Email: id,
             Password: password
           });
           console.log(response.data.user);
         } else {
-          response = await axios.post("http://localhost:8080/api/student/login", {
+          response = await axios.post("https://mockinterview-backend.onrender.com/api/student/login", {
             Email: id,
             Password: password
           });

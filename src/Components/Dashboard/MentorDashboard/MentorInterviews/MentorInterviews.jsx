@@ -17,7 +17,7 @@ const MentorInterviews = () => {
 
   useEffect(() => {
     if (email) {
-      axios.get(`http://localhost:8080/api/${email}`)
+      axios.get(`https://mockinterview-backend.onrender.com/api/${email}`)
         .then(response => {
           console.log('API Response:', response.data);
           setInterviews(response.data);
@@ -48,7 +48,7 @@ const MentorInterviews = () => {
 
   const submitRating = () => {
     if (selectedInterview) {
-      axios.put(`http://localhost:8080/api/mentor/${selectedInterview.id}`, {
+      axios.put(`https://mockinterview-backend.onrender.com/api/mentor/${selectedInterview.id}`, {
         student_score: rating
       })
         .then(response => {

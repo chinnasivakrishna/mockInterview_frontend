@@ -1,11 +1,12 @@
 import React from 'react';
 import './Features.css';
+import image from './images.jpeg';
 
 function Features() {
   return (
     <div class="feature-container">
   <div class="image-section">
-    <img src="path_to_your_image.png" alt="Feature Image" class="feature-image" />
+    <img src={image} alt="Feature Image" class="feature-image" />
   </div>
   <div class="text-section">
     <div class="feature-item">

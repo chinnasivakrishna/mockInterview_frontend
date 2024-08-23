@@ -17,7 +17,7 @@ const MentorDashboard = () => {
   const mentorEmail = email;
   console.log(requests)
   useEffect(() => {
-    axios.get(`http://localhost:8080/api/requests/${mentorEmail}`)
+    axios.get(`https://mockinterview-backend.onrender.com/api/requests/${mentorEmail}`)
       .then(response => setRequests(response.data))
       .catch(error => console.error('Error fetching requests:', error));
   }, [mentorEmail]);
@@ -27,7 +27,7 @@ const MentorDashboard = () => {
   };
 
   const handleReject = (id) => {
-    axios.post('http://localhost:8080/api/reject-request', { id })
+    axios.post('https://mockinterview-backend.onrender.com/api/reject-request', { id })
       .then(response => {
         alert(response.data.message);
         setRequests(requests.filter(req => req.id !== id));
@@ -44,7 +44,7 @@ const MentorDashboard = () => {
   }
 
   const handleConfirm = () => {
-    axios.post('http://localhost:8080/api/accept-request', { id: selectedRequest.id, mock_date: date, mock_time: time , mentor_email:mentorEmail})
+    axios.post('https://mockinterview-backend.onrender.com/api/accept-request', { id: selectedRequest.id, mock_date: date, mock_time: time , mentor_email:mentorEmail})
       .then(response => {
         alert(response.data.message);
         setSelectedRequest(null);

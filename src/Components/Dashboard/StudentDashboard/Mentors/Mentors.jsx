@@ -13,7 +13,7 @@ const Mentors = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/mentor/average-scores')
+    axios.get('https://mockinterview-backend.onrender.com/api/mentor/average-scores')
       .then(response => {
         console.log('API Response:', response.data);
         setMentors(response.data);

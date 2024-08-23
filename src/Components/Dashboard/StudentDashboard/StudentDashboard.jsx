@@ -31,12 +31,12 @@ const StudentDashboard = () => {
     // Fetch student details to check premium status
     const fetchStudentDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8080/api/student/${email}`);
+        const response = await axios.get(`https://mockinterview-backend.onrender.com/api/student/${email}`);
         const student = response.data;
         setIsPremium(student.ispremium);
         if (student.ispremium) {
           // Fetch mentors if the student is premium
-          const mentorsResponse = await axios.get('http://localhost:8080/api/mentor');
+          const mentorsResponse = await axios.get('https://mockinterview-backend.onrender.com/api/mentor');
           setMentors(mentorsResponse.data.map(mentor => ({
             value: mentor.email,
             label: mentor.Name
@@ -94,7 +94,7 @@ const StudentDashboard = () => {
     };
     console.log(newInterview);
     try {
-      const response = await axios.post('http://localhost:8080/api/mock-interviews', newInterview);
+      const response = await axios.post('https://mockinterview-backend.onrender.com/api/mock-interviews', newInterview);
       if (response.data.message === "Mock interview scheduled and requests sent to mentors") {
         setMockInterviews([...mockInterviews, newInterview]);
         setShowModal(true);
@@ -139,12 +139,12 @@ const StudentDashboard = () => {
 
   const handlePremiumPlan = async () => {
     try {
-      const response = await axios.post('http://localhost:8080/api/student/update-premium', { email });
+      const response = await axios.post('https://mockinterview-backend.onrender.com/api/student/update-premium', { email });
       if (response.data.message === 'Premium status updated successfully') {
         alert('Premium Plan activated successfully!');
         setShowPremiumModal(false);
         // Fetch updated student details
-        const studentResponse = await axios.get(`http://localhost:8080/api/student/${email}`);
+        const studentResponse = await axios.get(`https://mockinterview-backend.onrender.com/api/student/${email}`);
         setIsPremium(studentResponse.data.ispremium);
       } else {
         alert('Failed to update premium status.');
