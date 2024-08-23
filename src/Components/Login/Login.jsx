@@ -66,7 +66,6 @@ const Login = () => {
           console.log(response.data.user);
         }
 
-        // Set JWT token in cookies
         const { token } = response.data;
         Cookies.set('jwt_token', token, { expires: 30 });
 
