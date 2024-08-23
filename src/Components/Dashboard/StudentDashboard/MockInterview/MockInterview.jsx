@@ -112,7 +112,7 @@ const MockInterview = () => {
                 <td>{interview.status}</td>
                 <td>{interview.student_score === 0 ? 'In Progress' : interview.student_score}</td>
                 <td>
-                  {interview.student_score === 0 && (
+                  {interview.student_score !== 0 && (
                     <button
                       className="rate-button"
                       onClick={() => handleRateClick(interview)}
