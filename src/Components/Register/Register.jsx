@@ -80,8 +80,6 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     
-    
-    console.log(roles.map(role => role.value))
     e.preventDefault();
     if (validate()) {
       setIsSubmitted(true);
