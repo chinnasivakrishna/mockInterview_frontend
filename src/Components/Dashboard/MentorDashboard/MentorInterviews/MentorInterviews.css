@@ -1,0 +1,83 @@
+.mentor-interviews-container {
+  padding: 20px;
+}
+
+.mentor-interviews-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mentor-interviews-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mentor-interviews-table th,
+.mentor-interviews-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.mentor-interviews-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.mentor-interviews-table td {
+  background-color: #fff;
+}
+
+.no-interviews {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.rating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rating-modal {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.rating-stars {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.rating-stars .star {
+  cursor: pointer;
+  color: #ddd;
+}
+
+.rating-stars .star.selected {
+  color: #f39c12;
+}
+
+.rating-modal button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.rating-modal button:hover {
+  background: #0056b3;
+}

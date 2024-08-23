@@ -1,0 +1,13 @@
+.footer-content1 {
+  padding: 0px;
+  background: lightblue;
+  color: black;
+  text-align: center;
+
+}
+
+.footer-content1 .social-media a {
+  color: black;
+  margin: 0 10px;
+  text-decoration: none;
+}

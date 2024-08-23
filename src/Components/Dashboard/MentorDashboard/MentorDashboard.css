@@ -1,0 +1,126 @@
+/* MentorDashboard.css */
+
+/* General Styles */
+
+
+.mentor-dashboard {
+  width: 80%;
+  max-width: 1200px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* Header */
+.mentor-dashboard h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Table Styles */
+.mentor-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.mentor-dashboard thead {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.mentor-dashboard th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.mentor-dashboard th {
+  font-weight: bold;
+}
+
+.mentor-dashboard tr:hover {
+  background-color: #f1f1f1;
+}
+
+.mentor-dashboard button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.mentor-dashboard button:hover {
+  background-color: #0056b3;
+}
+
+.mentor-dashboard button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.mentor-dashboard .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.mentor-dashboard .card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+.mentor-dashboard .card h2 {
+  margin-bottom: 20px;
+}
+
+.mentor-dashboard .card label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.mentor-dashboard .card input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.mentor-dashboard .card button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .mentor-dashboard {
+    width: 90%;
+  }
+
+    .mentor-dashboard table,
+  .card {
+    font-size: 14px;
+  }
+}

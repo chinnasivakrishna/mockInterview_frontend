@@ -1,0 +1,35 @@
+.mentors-container {
+  padding: 20px;
+}
+
+.mentors-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mentors-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mentors-table th,
+.mentors-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.mentors-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.mentors-table td {
+  background-color: #fff;
+}
+
+.no-mentors {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}

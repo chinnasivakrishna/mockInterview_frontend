@@ -1,0 +1,39 @@
+.hero-section {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.schedule-btn,
+.learn-more-btn {
+  padding: 15px 30px;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.schedule-btn {
+  background-color: red;
+  color: white;
+}
+
+.learn-more-btn {
+  background-color: #333;
+  color: white;
+}

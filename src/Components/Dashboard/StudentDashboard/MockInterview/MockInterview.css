@@ -1,0 +1,74 @@
+.mock-interview-container {
+  padding: 20px;
+}
+
+.mock-interview-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.mock-interview-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.mock-interview-table th,
+.mock-interview-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.mock-interview-table th {
+  background-color: #f4f4f4;
+}
+
+.rate-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.rating-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 500px;
+}
+
+.stars {
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 54px;
+  cursor: pointer;
+  color: #ddd;
+}
+
+.star.selected {
+  color: #FFD700;
+}
+
+button {
+  margin: 10px;
+}

@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+}
+
+.img {
+  height: 10vh;
+  border-radius: 100%;
+  margin: 7px;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.navbar-buttons1{
+  margin-top: 15px;
+}
