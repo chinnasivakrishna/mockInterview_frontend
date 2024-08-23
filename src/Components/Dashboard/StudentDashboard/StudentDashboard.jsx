@@ -51,12 +51,32 @@ const StudentDashboard = () => {
   }, [email]);
 
   const topicsOptions = [
-    { value: 'Data Structures', label: 'Data Structures' },
-    { value: 'Algorithms', label: 'Algorithms' },
-    { value: 'System Design', label: 'System Design' },
-    { value: 'Coding', label: 'Coding' },
-    { value: 'Equity Research', label: 'Equity Research' },
-  ];
+  { value: 'FMCG Sales', label: 'FMCG Sales' },
+  { value: 'Equity Research', label: 'Equity Research' },
+  { value: 'Digital Marketing', label: 'Digital Marketing' },
+  { value: 'Operations Management', label: 'Operations Management' },
+  { value: 'Business Analytics', label: 'Business Analytics' },
+  { value: 'Human Resource Management', label: 'Human Resource Management' },
+  { value: 'Consulting', label: 'Consulting' },
+  { value: 'Investment Banking', label: 'Investment Banking' },
+  { value: 'Financial Management', label: 'Financial Management' },
+  { value: 'Product Management', label: 'Product Management' },
+  { value: 'Supply Chain Management', label: 'Supply Chain Management' },
+  { value: 'Risk Management', label: 'Risk Management' },
+  { value: 'Corporate Finance', label: 'Corporate Finance' },
+  { value: 'Retail Management', label: 'Retail Management' },
+  { value: 'Healthcare Management', label: 'Healthcare Management' },
+  { value: 'Real Estate Management', label: 'Real Estate Management' },
+  { value: 'Strategic Management', label: 'Strategic Management' },
+  { value: 'Entrepreneurship', label: 'Entrepreneurship' },
+  { value: 'Sales Management', label: 'Sales Management' },
+  { value: 'Media and Entertainment Management', label: 'Media and Entertainment Management' },
+  { value: 'Luxury Brand Management', label: 'Luxury Brand Management' },
+  { value: 'Sports Management', label: 'Sports Management' },
+  { value: 'Public Policy', label: 'Public Policy' },
+  { value: 'Energy Management', label: 'Energy Management' }
+];
+
 
   const handleAddDate = (date) => {
     if (moment(date).isBefore(moment(), 'day')) {
