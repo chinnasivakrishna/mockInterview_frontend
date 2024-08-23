@@ -48,11 +48,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (validate()) {
-      console.log(type);
       try {
         let response;
         if (type === "mentor") {
-          console.log(type);
           response = await axios.post("https://mockinterview-backend.onrender.com/api/mentor/login", {
             Email: id,
             Password: password
