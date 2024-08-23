@@ -311,7 +311,8 @@ required
           readOnly
           rows="5"
           className="dates-textarea"
-        />
+            />
+            <h4>Note:*If you want to select the mentor you want to buy premium*</h4>
 
         <button type="submit" className="submit-button">Schedule Interview</button>
       </form>
@@ -329,7 +330,7 @@ required
               <p><strong>Available Dates:</strong> {interview.dates.join(', ')}</p>
               <p><strong>Cost:</strong> ${interview.cost}</p>
               <p><strong>Status:</strong> {interview.status}</p>
-              <button className="complete-button" onClick={() => handleComplete(index)}>Complete</button>
+              <button className="complete-button" onClick={() => handleComplete(index)}>Check Out</button>
             </div>
           ))}
         </div>
