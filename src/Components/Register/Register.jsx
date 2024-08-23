@@ -91,7 +91,6 @@ const Register = () => {
           Name: username,
           Email: email,
           Password: password,
-          Type: type,
           Roles: roles.map(role => role.value), // Send selected roles
         });
         if (response.data.message === 'employee added success full') {
@@ -104,7 +103,6 @@ const Register = () => {
           Name: username,
           Email: email,
           Password: password,
-          Type: type,
         });
         if (response.data.message === 'student added success full') {
           alert('Registration successful');
