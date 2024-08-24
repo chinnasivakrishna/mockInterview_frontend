@@ -89,7 +89,7 @@ const Register = () => {
           Name: username,
           Email: email,
           Password: password,
-          Roles: roles.map(role => role.value), // Send selected roles
+          Roles: roles.map(role => role.value), 
         });
         if (response.data.message === 'employee added success full') {
           alert('Registration successful');
