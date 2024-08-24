@@ -5,17 +5,14 @@
   padding: 20px;
   background-color: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.logo1{
-  height: 10vh;
-    border-radius: 100%;
-    margin-top: -10px;
-}
-.navbar-logo {
-  font-size: 24px;
-  font-weight: bold;
+  flex-wrap: wrap;
 }
 
+.logo1 {
+  height: 10vh;
+  border-radius: 100%;
+  margin-top: -10px;
+}
 
 .navbar-links {
   list-style: none;
@@ -51,4 +48,53 @@
 .join-btn {
   background-color: red;
   color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    display: none;
+  }
+
+  .navbar-buttons {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .navbar-buttons button {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links a {
+    text-align: center;
+    width: 100%;
+  }
 }

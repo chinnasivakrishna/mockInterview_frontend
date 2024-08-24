@@ -1,9 +1,15 @@
+
 .login-form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+.login-form-container .login-image {
+  flex: 1;
 }
 
 .login-form-container .login-form {
@@ -46,10 +52,8 @@
 }
 
 .login-form-container .login-form__input:focus {
-
   border-color: #007bff;
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
-
 }
 
 .login-form-container .login-form__remember-forgot {
@@ -123,4 +127,18 @@
 .login-images {
   height: 80vh;
   width: 50vw;
+}
+
+@media (max-width: 768px) {
+  .login-form-container {
+    flex-direction: column;
+  }
+
+  .login-image {
+    display: none;
+  }
+
+  .login-form-container .login-form {
+    margin: 0;
+  }
 }
