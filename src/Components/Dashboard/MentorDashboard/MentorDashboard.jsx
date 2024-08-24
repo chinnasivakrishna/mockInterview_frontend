@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './MentorDashboard.css'; // Ensure you import the CSS for styling
+import './MentorDashboard.css'; 
 import { useLocation,Link, useNavigate } from 'react-router-dom';
 import logo from '../../logo.png';
 import Cookies from 'js-cookie';

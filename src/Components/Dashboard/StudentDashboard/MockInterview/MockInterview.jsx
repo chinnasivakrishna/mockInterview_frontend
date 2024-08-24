@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './MockInterview.css'; // Import the CSS file
+import './MockInterview.css';
 import logo from '../../../logo.png';
 import Cookies from 'js-cookie';
 
@@ -55,7 +55,6 @@ const MockInterview = () => {
         mentor_score: rating
       })
       .then(() => {
-        // Update the interviews state with the new rating
         setInterviews(prevInterviews => prevInterviews.map(interview =>
           interview.id === selectedInterview.id
             ? { ...interview, mentor_score: rating }

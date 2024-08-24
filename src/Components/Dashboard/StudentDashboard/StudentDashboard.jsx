@@ -28,14 +28,12 @@ const StudentDashboard = () => {
   const { email } = state || {};
 
   useEffect(() => {
-    // Fetch student details to check premium status
     const fetchStudentDetails = async () => {
       try {
         const response = await axios.get(`https://mockinterview-backend.onrender.com/api/student/${email}`);
         const student = response.data;
         setIsPremium(student.ispremium);
         if (student.ispremium) {
-          // Fetch mentors if the student is premium
           const mentorsResponse = await axios.get('https://mockinterview-backend.onrender.com/api/mentor');
           setMentors(mentorsResponse.data.map(mentor => ({
             value: mentor.email,
@@ -110,7 +108,7 @@ const StudentDashboard = () => {
       cost,
       status: 'In Progress',
       email,
-      mentor: selectedMentor ? selectedMentor.value : null // Add mentor if selected
+      mentor: selectedMentor ? selectedMentor.value : null 
     };
     console.log(newInterview);
     try {
@@ -125,14 +123,13 @@ const StudentDashboard = () => {
       console.error('Error scheduling mock interview:', error);
     }
 
-    // Reset form fields
     setDuration('');
     setTopics([]);
     setAvailableDates([]);
     setSameTimings(false);
     setFromTime('');
     setToTime('');
-    setSelectedMentor(null); // Reset selected mentor
+    setSelectedMentor(null);
   };
 
   const handleComplete = (index) => {
@@ -163,7 +160,6 @@ const StudentDashboard = () => {
       if (response.data.message === 'Premium status updated successfully') {
         alert('Premium Plan activated successfully!');
         setShowPremiumModal(false);
-        // Fetch updated student details
         const studentResponse = await axios.get(`https://mockinterview-backend.onrender.com/api/student/${email}`);
         setIsPremium(studentResponse.data.ispremium);
       } else {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import './Mentors.css'; // Import the CSS file
+import './Mentors.css';  
 import logo from '../../../logo.png';
 import { useLocation, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';

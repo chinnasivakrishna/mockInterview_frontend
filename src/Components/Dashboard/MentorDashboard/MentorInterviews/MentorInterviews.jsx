@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './MentorInterviews.css'; // Import the CSS file
+import './MentorInterviews.css'; 
 import logo from '../../../logo.png';
 import Cookies from 'js-cookie';
 
