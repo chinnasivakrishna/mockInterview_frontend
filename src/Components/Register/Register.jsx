@@ -91,7 +91,7 @@ const Register = () => {
           Password: password,
           Roles: roles.map(role => role.value), 
         });
-        if (response.data.message === 'employee added success full') {
+        if (response.data.message === 'Student added successfully') {
           alert('Registration successful');
           navigate("/login");
           }
